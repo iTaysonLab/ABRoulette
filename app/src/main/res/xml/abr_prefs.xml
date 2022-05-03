@@ -1,0 +1,220 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Info">
+
+        <Preference
+            app:icon="@drawable/ic_baseline_warning_24"
+            app:key="sp_version"
+            app:title="Application support" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Special Hooks">
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_phone_android_24"
+            app:key="ah_transparent"
+            app:summary="this will break tabbar insets"
+            app:title="Transparent statusbar" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_rounded_corner_24"
+            app:key="ah_round"
+            app:summary="this can show black background in playlists\n\nonly for 8.7.6.108X"
+            app:title="Rounded artwork everywhere" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="UI">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_insert_emoticon_24"
+            app:defaultValue="true"
+            app:key="ab_redraw"
+            app:title="New UI icons" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_vibration_24"
+            app:key="ab_haptic"
+            app:title="Vibrate when liking playlists" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_visibility_off_24"
+            app:key="ab_hide"
+            app:title="Hide tabbar on scroll" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_widgets_24"
+            app:key="ab_material"
+            app:title="Material You widgets" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_npb_float"
+            app:title="Now Playing bar: floating" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_npb_color"
+            app:title="Now Playing bar: color extraction" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_car"
+            app:summary="also enables Car Mode if you are unlucky with A/B"
+            app:title="New Car Mode" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Home screen and Library">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_settings_24"
+            app:key="ab_settings"
+            app:title="Enable language settings" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_settings_24"
+            app:key="ab_hide_settings"
+            app:title="Hide settings from ''Home''" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_palette_24"
+            app:key="ab_home_encore"
+            app:title="General ''Home'' screen redesign" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_filter_list_24"
+            app:key="ab_filters"
+            app:summary="for playlist filtering in Library"
+            app:title="''By you'' and ''By Spotify'' filters" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_filter_list_24"
+            app:key="ab_filters_history"
+            app:title="Filters in ''Listening History''" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_dac"
+            app:title="Enable DAC catalogue system for Home" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Lyrics">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_fullscreen_24"
+            app:key="ab_lyr_expand"
+            app:title="Lyrics: expand button" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_audiotrack_24"
+            app:key="ab_lyr_change"
+            app:title="Lyrics: allow track changing" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_mic_24"
+            app:defaultValue="true"
+            app:key="ab_lyr_badge"
+            app:title="Lyrics: show as badge" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_lyr_syllables"
+            app:title="Lyrics: syllable sync" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_micdrop"
+            app:title="Lyrics: MicDrop" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Encore">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_encore_tracks"
+            app:summary="when adding tracks to a playlist"
+            app:title="Encore trackrows" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_encore_album"
+            app:title="Modern playlist and artist headers" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_encore_search"
+            app:title="Encore serach header" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_encore_swipeable"
+            app:title="Swipeable track rows" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_find"
+            app:title="Searchbar improvements" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_encore_canvasheader"
+            app:title="Show header with canvas in playlists" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Misc A/B stuff">
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_assistant_24"
+            app:defaultValue="true"
+            app:key="ab_voice"
+            app:title="Enable voice assistant" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_block_24"
+            app:key="ab_exclude_rcm"
+            app:title="''Exclude from recommendations''" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_timer_24"
+            app:key="ab_silence"
+            app:title="Silence trimmer for podcasts" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_shimmer"
+            app:title="Allow preload shimmering" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_discover"
+            app:title="Enable ''Discover Now''" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_california"
+            app:title="California" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_sl_newui"
+            app:title="New UI in Social Listening" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_delete_24"
+            app:key="ab_greenroom"
+            app:summary="for lulz, this will break UX"
+            app:title="Force Greenroom UI" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About">
+
+        <Preference app:icon="@drawable/ic_baseline_info_24" app:key="about" />
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_baseline_bug_report_24"
+            app:key="ab_debug"
+            app:title="Print A/B to LogCat" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
